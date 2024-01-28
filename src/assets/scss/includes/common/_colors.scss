@@ -1,0 +1,41 @@
+$dark: #252525;
+$tr: transparent;
+$white: #fff;
+
+$primary: #00CCFA;
+$darkPrimary: #003E76;
+$lightPrimary: #00CCCD;
+
+$grayBorder1: #DEE1E5;
+$grayBorder2: #CFD3DA;
+
+$grayText1: #A8A8A8;
+$grayText2: #969696;
+$grayText3: #4B4A4A;
+$grayText4: #C0C0C0;
+
+$grayBg: #F7F7F9;
+$grayBg2: #F7F7F9;
+
+.color-white { color: $white; }
+.color-dark { color: $dark; }
+
+.color-primary { color: $primary; }
+.color-darkPrimary { color: $darkPrimary; }
+.color-lightPrimary { color: $lightPrimary; }
+
+.color-grayBorder1 { color: $grayBorder1; }
+.color-grayBorder2 { color: $grayBorder2; }
+
+.color-grayText1 { color: $grayText1; }
+.color-grayText2 { color: $grayText2; }
+.color-grayText3 { color: $grayText3; }
+.color-grayText4 { color: $grayText4; }
+
+.color-grayBg { color: $grayBg }
+.bg-gray { background-color: $grayBg; }
+.bg-lightBlue { background-color: #EAF2FF !important; }
+.bg-white { background-color: $white !important; }
+
+
+

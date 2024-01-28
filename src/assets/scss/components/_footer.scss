@@ -1,0 +1,61 @@
+.footer {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 40px;
+  border-top: 1px solid $grayBorder1;
+
+  @include r($breakpoint-3) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    & * {
+      font-size: 16px !important;
+    }
+
+    .gap-10 {
+      gap: 15px;
+    }
+
+    button {
+      margin-top: -10px
+    }
+
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  #honeybee {
+    @include ease;
+    transform-origin: center;
+  }
+
+  &:hover {
+    #honeybee {
+      transform: scale(.9);
+      //transform: rotate(5deg);
+    }
+  }
+
+  svg {
+    width: 150px;
+    height: auto;
+  }
+}
+
+a.footer-tel,
+.footer-copy * {
+  @include r($breakpoint-3) {
+    font-size: 18px !important;
+  }
+}
+
+.footer-copy {
+  @include r($breakpoint-3) {
+    gap: 5px !important;
+  }
+}

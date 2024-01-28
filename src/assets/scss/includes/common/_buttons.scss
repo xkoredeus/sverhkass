@@ -1,0 +1,176 @@
+button {
+  border: none;
+  outline: none;
+  box-shadow: unset;
+  background: none;
+  padding: 0;
+}
+
+.button,
+a.button {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  @include ease-long;
+  color: $white;
+  padding: 15px 30px;
+  border-radius: 50px;
+
+  @include r($breakpoint-2) {
+    font-size: 14px;
+  }
+
+  &-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    @include r($breakpoint-2) {
+      gap: 12px
+    }
+
+    svg {
+      @include ease;
+
+      @include r($breakpoint-2) {
+        height: 14px;
+        width: auto;
+      }
+    }
+  }
+
+  &-primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover {
+      color: $white;
+      background-color: $darkPrimary;
+    }
+
+    &.button-icon {
+      svg {
+        fill: $white;
+      }
+
+      &:hover {
+        svg {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-small {
+    padding: 12px 20px;
+  }
+
+  &-extra-small {
+    padding: 10px 16px;
+  }
+
+  &-small-radius {
+    border-radius: 10px;
+  }
+
+  &-big {
+    padding: 19px 40px;
+  }
+}
+
+.link {
+  font-family: $font-medium;
+}
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    @include r($breakpoint-2) {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+.link-blue {
+  color: $primary;
+
+  &:hover {
+    color: $darkPrimary;
+  }
+}
+
+
+.link-white {
+  color: $white;
+
+  &:hover {
+    color: $grayBorder1;
+  }
+}
+
+.link-grayText1 {
+  color: $grayText1;
+
+  &:hover {
+    color: $darkPrimary;
+  }
+}
+
+.link-grayText2 {
+  color: $grayText2;
+
+  &:hover {
+    color: $darkPrimary;
+  }
+}
+
+.link-grayText3 {
+  color: $grayText3;
+
+  &:hover {
+    color: $darkPrimary;
+  }
+}
+
+a,
+button {
+  &.link-grayText1 {
+    color: $grayText1;
+
+    &:hover {
+      color: $primary;
+    }
+    &.und {
+      text-decoration-color: $grayText1;
+    }
+  }
+  &.link-grayText2 {
+    color: $grayText2;
+
+    &:hover {
+      color: $primary;
+    }
+    &.und {
+      text-decoration-color: $grayText2;
+    }
+  }
+  &.link-grayText3 {
+    color: $grayText3;
+
+    &:hover {
+      color: $primary;
+    }
+    &.und {
+      text-decoration-color: $grayText3;
+    }
+  }
+}
